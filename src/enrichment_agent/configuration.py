@@ -15,7 +15,7 @@ class Configuration:
     """The configuration for the agent."""
 
     model: Annotated[str, {"__template_metadata__": {"kind": "llm"}}] = field(
-        default="anthropic/claude-haiku-4-5-20251001",
+        default="google_genai/gemini-2.5-flash",
         metadata={
             "description": "The name of the language model to use for the agent. "
             "Should be in the form: provider/model-name."
